@@ -28,6 +28,7 @@
 declare module '$env/static/private' {
 	export const GJS_DEBUG_TOPICS: string;
 	export const LESSOPEN: string;
+	export const npm_package_dev: string;
 	export const USER: string;
 	export const LC_TIME: string;
 	export const npm_config_user_agent: string;
@@ -35,10 +36,12 @@ declare module '$env/static/private' {
 	export const XDG_SESSION_TYPE: string;
 	export const GIT_ASKPASS: string;
 	export const npm_node_execpath: string;
+	export const npm_package_resolved: string;
 	export const SHLVL: string;
 	export const npm_config_noproxy: string;
 	export const HOME: string;
 	export const CHROME_DESKTOP: string;
+	export const npm_package_optional: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const DESKTOP_SESSION: string;
 	export const GTK_PATH: string;
@@ -47,6 +50,7 @@ declare module '$env/static/private' {
 	export const NVM_INC: string;
 	export const GTK_IM_MODULE_FILE: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE: string;
+	export const npm_package_engines_node: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const GTK_MODULES: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
@@ -55,6 +59,7 @@ declare module '$env/static/private' {
 	export const MANAGERPID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
+	export const npm_package_integrity: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const IM_CONFIG_CHECK_ENV: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
@@ -113,12 +118,14 @@ declare module '$env/static/private' {
 	export const GDMSESSION: string;
 	export const LESSCLOSE: string;
 	export const LC_MEASUREMENT: string;
+	export const npm_package_dev_optional: string;
 	export const GJS_DEBUG_OUTPUT: string;
 	export const LC_IDENTIFICATION: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const QT_IM_MODULE: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
+	export const npm_package_peer: string;
 	export const PWD: string;
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
@@ -131,7 +138,6 @@ declare module '$env/static/private' {
 	export const GTK_USE_PORTAL: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
-	export const NODE_ENV: string;
 }
 
 /**
@@ -163,6 +169,7 @@ declare module '$env/dynamic/private' {
 	export const env: {
 		GJS_DEBUG_TOPICS: string;
 		LESSOPEN: string;
+		npm_package_dev: string;
 		USER: string;
 		LC_TIME: string;
 		npm_config_user_agent: string;
@@ -170,10 +177,12 @@ declare module '$env/dynamic/private' {
 		XDG_SESSION_TYPE: string;
 		GIT_ASKPASS: string;
 		npm_node_execpath: string;
+		npm_package_resolved: string;
 		SHLVL: string;
 		npm_config_noproxy: string;
 		HOME: string;
 		CHROME_DESKTOP: string;
+		npm_package_optional: string;
 		TERM_PROGRAM_VERSION: string;
 		DESKTOP_SESSION: string;
 		GTK_PATH: string;
@@ -182,6 +191,7 @@ declare module '$env/dynamic/private' {
 		NVM_INC: string;
 		GTK_IM_MODULE_FILE: string;
 		GIO_LAUNCHED_DESKTOP_FILE: string;
+		npm_package_engines_node: string;
 		GNOME_SHELL_SESSION_MODE: string;
 		GTK_MODULES: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
@@ -190,6 +200,7 @@ declare module '$env/dynamic/private' {
 		MANAGERPID: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
+		npm_package_integrity: string;
 		SYSTEMD_EXEC_PID: string;
 		IM_CONFIG_CHECK_ENV: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
@@ -248,12 +259,14 @@ declare module '$env/dynamic/private' {
 		GDMSESSION: string;
 		LESSCLOSE: string;
 		LC_MEASUREMENT: string;
+		npm_package_dev_optional: string;
 		GJS_DEBUG_OUTPUT: string;
 		LC_IDENTIFICATION: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		QT_IM_MODULE: string;
 		npm_config_globalconfig: string;
 		npm_config_init_module: string;
+		npm_package_peer: string;
 		PWD: string;
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
@@ -266,7 +279,6 @@ declare module '$env/dynamic/private' {
 		GTK_USE_PORTAL: string;
 		INIT_CWD: string;
 		EDITOR: string;
-		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: string]: string | undefined;
 	}
