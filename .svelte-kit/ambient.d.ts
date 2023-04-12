@@ -26,22 +26,25 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const MONGO_URL: string;
 	export const GJS_DEBUG_TOPICS: string;
 	export const LESSOPEN: string;
-	export const npm_package_dev: string;
+	export const SDKMAN_VERSION: string;
+	export const J2SDKDIR: string;
 	export const USER: string;
 	export const LC_TIME: string;
 	export const npm_config_user_agent: string;
+	export const PT8HOME: string;
 	export const GIO_MODULE_DIR: string;
+	export const SSH_AGENT_PID: string;
 	export const XDG_SESSION_TYPE: string;
 	export const GIT_ASKPASS: string;
 	export const npm_node_execpath: string;
-	export const npm_package_resolved: string;
+	export const J2REDIR: string;
 	export const SHLVL: string;
 	export const npm_config_noproxy: string;
 	export const HOME: string;
 	export const CHROME_DESKTOP: string;
-	export const npm_package_optional: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const DESKTOP_SESSION: string;
 	export const GTK_PATH: string;
@@ -50,8 +53,8 @@ declare module '$env/static/private' {
 	export const NVM_INC: string;
 	export const GTK_IM_MODULE_FILE: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE: string;
-	export const npm_package_engines_node: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
+	export const GRADLE_HOME: string;
 	export const GTK_MODULES: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const LC_MONETARY: string;
@@ -59,19 +62,17 @@ declare module '$env/static/private' {
 	export const MANAGERPID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
-	export const npm_package_integrity: string;
-	export const SYSTEMD_EXEC_PID: string;
-	export const IM_CONFIG_CHECK_ENV: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const npm_config_engine_strict: string;
 	export const COLORTERM: string;
+	export const LIBVIRT_DEFAULT_URI: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 	export const COLOR: string;
 	export const NVM_DIR: string;
 	export const npm_config_metrics_registry: string;
 	export const IM_CONFIG_PHASE: string;
-	export const WAYLAND_DISPLAY: string;
 	export const LOGNAME: string;
+	export const SDKMAN_CANDIDATES_API: string;
 	export const JOURNAL_STREAM: string;
 	export const _: string;
 	export const npm_config_prefix: string;
@@ -80,9 +81,12 @@ declare module '$env/static/private' {
 	export const TERM: string;
 	export const npm_config_cache: string;
 	export const GNOME_DESKTOP_SESSION_ID: string;
+	export const WINDOWPATH: string;
 	export const npm_config_node_gyp: string;
 	export const PATH: string;
 	export const SESSION_MANAGER: string;
+	export const DERBY_HOME: string;
+	export const SDKMAN_CANDIDATES_DIR: string;
 	export const GTK_EXE_PREFIX: string;
 	export const INVOCATION_ID: string;
 	export const NODE: string;
@@ -90,7 +94,6 @@ declare module '$env/static/private' {
 	export const XDG_MENU_PREFIX: string;
 	export const LC_ADDRESS: string;
 	export const BAMF_DESKTOP_FILE_HINT: string;
-	export const GNOME_SETUP_DISPLAY: string;
 	export const XDG_RUNTIME_DIR: string;
 	export const GDK_BACKEND: string;
 	export const DISPLAY: string;
@@ -103,9 +106,10 @@ declare module '$env/static/private' {
 	export const XAUTHORITY: string;
 	export const LS_COLORS: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
+	export const SDKMAN_DIR: string;
+	export const SDKMAN_PLATFORM: string;
 	export const TERM_PROGRAM: string;
 	export const npm_lifecycle_script: string;
-	export const SSH_AGENT_LAUNCHER: string;
 	export const SSH_AUTH_SOCK: string;
 	export const GSETTINGS_SCHEMA_DIR: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
@@ -114,18 +118,18 @@ declare module '$env/static/private' {
 	export const npm_package_version: string;
 	export const npm_lifecycle_event: string;
 	export const QT_ACCESSIBILITY: string;
-	export const NO_AT_BRIDGE: string;
 	export const GDMSESSION: string;
 	export const LESSCLOSE: string;
 	export const LC_MEASUREMENT: string;
-	export const npm_package_dev_optional: string;
+	export const npm_config_open: string;
+	export const GPG_AGENT_INFO: string;
 	export const GJS_DEBUG_OUTPUT: string;
 	export const LC_IDENTIFICATION: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const QT_IM_MODULE: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
-	export const npm_package_peer: string;
+	export const JAVA_HOME: string;
 	export const PWD: string;
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
@@ -138,6 +142,7 @@ declare module '$env/static/private' {
 	export const GTK_USE_PORTAL: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -167,22 +172,25 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		MONGO_URL: string;
 		GJS_DEBUG_TOPICS: string;
 		LESSOPEN: string;
-		npm_package_dev: string;
+		SDKMAN_VERSION: string;
+		J2SDKDIR: string;
 		USER: string;
 		LC_TIME: string;
 		npm_config_user_agent: string;
+		PT8HOME: string;
 		GIO_MODULE_DIR: string;
+		SSH_AGENT_PID: string;
 		XDG_SESSION_TYPE: string;
 		GIT_ASKPASS: string;
 		npm_node_execpath: string;
-		npm_package_resolved: string;
+		J2REDIR: string;
 		SHLVL: string;
 		npm_config_noproxy: string;
 		HOME: string;
 		CHROME_DESKTOP: string;
-		npm_package_optional: string;
 		TERM_PROGRAM_VERSION: string;
 		DESKTOP_SESSION: string;
 		GTK_PATH: string;
@@ -191,8 +199,8 @@ declare module '$env/dynamic/private' {
 		NVM_INC: string;
 		GTK_IM_MODULE_FILE: string;
 		GIO_LAUNCHED_DESKTOP_FILE: string;
-		npm_package_engines_node: string;
 		GNOME_SHELL_SESSION_MODE: string;
+		GRADLE_HOME: string;
 		GTK_MODULES: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		LC_MONETARY: string;
@@ -200,19 +208,17 @@ declare module '$env/dynamic/private' {
 		MANAGERPID: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
-		npm_package_integrity: string;
-		SYSTEMD_EXEC_PID: string;
-		IM_CONFIG_CHECK_ENV: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		npm_config_engine_strict: string;
 		COLORTERM: string;
+		LIBVIRT_DEFAULT_URI: string;
 		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 		COLOR: string;
 		NVM_DIR: string;
 		npm_config_metrics_registry: string;
 		IM_CONFIG_PHASE: string;
-		WAYLAND_DISPLAY: string;
 		LOGNAME: string;
+		SDKMAN_CANDIDATES_API: string;
 		JOURNAL_STREAM: string;
 		_: string;
 		npm_config_prefix: string;
@@ -221,9 +227,12 @@ declare module '$env/dynamic/private' {
 		TERM: string;
 		npm_config_cache: string;
 		GNOME_DESKTOP_SESSION_ID: string;
+		WINDOWPATH: string;
 		npm_config_node_gyp: string;
 		PATH: string;
 		SESSION_MANAGER: string;
+		DERBY_HOME: string;
+		SDKMAN_CANDIDATES_DIR: string;
 		GTK_EXE_PREFIX: string;
 		INVOCATION_ID: string;
 		NODE: string;
@@ -231,7 +240,6 @@ declare module '$env/dynamic/private' {
 		XDG_MENU_PREFIX: string;
 		LC_ADDRESS: string;
 		BAMF_DESKTOP_FILE_HINT: string;
-		GNOME_SETUP_DISPLAY: string;
 		XDG_RUNTIME_DIR: string;
 		GDK_BACKEND: string;
 		DISPLAY: string;
@@ -244,9 +252,10 @@ declare module '$env/dynamic/private' {
 		XAUTHORITY: string;
 		LS_COLORS: string;
 		VSCODE_GIT_IPC_HANDLE: string;
+		SDKMAN_DIR: string;
+		SDKMAN_PLATFORM: string;
 		TERM_PROGRAM: string;
 		npm_lifecycle_script: string;
-		SSH_AGENT_LAUNCHER: string;
 		SSH_AUTH_SOCK: string;
 		GSETTINGS_SCHEMA_DIR: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
@@ -255,18 +264,18 @@ declare module '$env/dynamic/private' {
 		npm_package_version: string;
 		npm_lifecycle_event: string;
 		QT_ACCESSIBILITY: string;
-		NO_AT_BRIDGE: string;
 		GDMSESSION: string;
 		LESSCLOSE: string;
 		LC_MEASUREMENT: string;
-		npm_package_dev_optional: string;
+		npm_config_open: string;
+		GPG_AGENT_INFO: string;
 		GJS_DEBUG_OUTPUT: string;
 		LC_IDENTIFICATION: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		QT_IM_MODULE: string;
 		npm_config_globalconfig: string;
 		npm_config_init_module: string;
-		npm_package_peer: string;
+		JAVA_HOME: string;
 		PWD: string;
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
@@ -279,6 +288,7 @@ declare module '$env/dynamic/private' {
 		GTK_USE_PORTAL: string;
 		INIT_CWD: string;
 		EDITOR: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: string]: string | undefined;
 	}
