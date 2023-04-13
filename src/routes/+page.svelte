@@ -1,45 +1,50 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-	export let data: PageData;
-	$: ({ users } = data);
+  import type { PageData } from "./$types";
+  export let data: PageData;
+  $: ({ tasks } = data);
+  
+  let taskName = "";
+  async function addTask() {
+    if (taskName.trim() !== "") {
+      const id = tasks.length ? tasks[tasks.length - 1].id + 1 : 1;
+      tasks = [...tasks, { id, name: taskName, completed: false }];
+      taskName = "";
+    }
+  }
+  function removeTask(id: number) {
+    tasks = tasks.filter((task: { id: number; }) => task.id !== id);
+  }
+  function toggleTask(id: number) {
+    tasks = tasks.map((task: { id: number; completed: any; }) => {
+      if (task.id === id) {
+        return { ...task, completed: !task.completed };
+      }
+      return task;
+    });
+  }
 </script>
 
+<h1>Task Manager</h1>
+<form on:submit|preventDefault={addTask}>
+  <input type="text" bind:value={taskName} />
+  <button type="submit">Add Task</button>
+</form>
+<ul>
+  {#each tasks as task}
+    <li on:click={() => toggleTask(task.id)} class:completed={task.completed}>
+      {task.name}
+      <button on:click|stopPropagation={() => removeTask(task.id)}>X</button>
+    </li>
+  {/each}
+</ul>
+
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+  <title>Home</title>
+  <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	{#each users as user}
-		<article>
-			<h2>{user.name}</h2>
-		</article>
-	{/each}
-</section>
-
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-	h1 {
-		width: 100%;
-	}
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+  .completed {
+    text-decoration: line-through;
+  }
 </style>

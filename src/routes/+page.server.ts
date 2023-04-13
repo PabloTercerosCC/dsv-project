@@ -1,4 +1,4 @@
-import { users } from '../db/users';
+import { tasks } from '../db/tasks';
 
 import type {PageServerLoad} from './$types'
 
@@ -7,9 +7,9 @@ const serializeNonPOJOs = (value: object | null) => {
 };
 
 export const load: PageServerLoad = async function() {
-	const data = await users.find().toArray();
+	const data = await tasks.find().toArray();
 
 	return {
-		users: JSON.parse(JSON.stringify(data))
+		tasks: JSON.parse(JSON.stringify(data))
 	}
 }

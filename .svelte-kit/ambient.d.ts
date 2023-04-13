@@ -27,7 +27,6 @@
  */
 declare module '$env/static/private' {
 	export const MONGO_URL: string;
-	export const GJS_DEBUG_TOPICS: string;
 	export const LESSOPEN: string;
 	export const SDKMAN_VERSION: string;
 	export const J2SDKDIR: string;
@@ -62,6 +61,7 @@ declare module '$env/static/private' {
 	export const MANAGERPID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
+	export const DBUS_STARTER_BUS_TYPE: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const npm_config_engine_strict: string;
 	export const COLORTERM: string;
@@ -121,9 +121,7 @@ declare module '$env/static/private' {
 	export const GDMSESSION: string;
 	export const LESSCLOSE: string;
 	export const LC_MEASUREMENT: string;
-	export const npm_config_open: string;
 	export const GPG_AGENT_INFO: string;
-	export const GJS_DEBUG_OUTPUT: string;
 	export const LC_IDENTIFICATION: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const QT_IM_MODULE: string;
@@ -134,6 +132,7 @@ declare module '$env/static/private' {
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
 	export const NVM_CD_FLAGS: string;
+	export const DBUS_STARTER_ADDRESS: string;
 	export const XDG_DATA_DIRS: string;
 	export const npm_config_global_prefix: string;
 	export const LC_NUMERIC: string;
@@ -173,7 +172,6 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		MONGO_URL: string;
-		GJS_DEBUG_TOPICS: string;
 		LESSOPEN: string;
 		SDKMAN_VERSION: string;
 		J2SDKDIR: string;
@@ -208,6 +206,7 @@ declare module '$env/dynamic/private' {
 		MANAGERPID: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
+		DBUS_STARTER_BUS_TYPE: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		npm_config_engine_strict: string;
 		COLORTERM: string;
@@ -267,9 +266,7 @@ declare module '$env/dynamic/private' {
 		GDMSESSION: string;
 		LESSCLOSE: string;
 		LC_MEASUREMENT: string;
-		npm_config_open: string;
 		GPG_AGENT_INFO: string;
-		GJS_DEBUG_OUTPUT: string;
 		LC_IDENTIFICATION: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		QT_IM_MODULE: string;
@@ -280,6 +277,7 @@ declare module '$env/dynamic/private' {
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
 		NVM_CD_FLAGS: string;
+		DBUS_STARTER_ADDRESS: string;
 		XDG_DATA_DIRS: string;
 		npm_config_global_prefix: string;
 		LC_NUMERIC: string;
