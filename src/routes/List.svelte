@@ -9,11 +9,17 @@
         });
       }
     }
+
+    function deleteTaskList() {
+      const taskDiv = document.querySelector('.task');
+      taskDiv.remove();
+    }
 </script>
 
 <div class="task">
     <li class="title-Task">{name}</li>
     <button class="button-addTask" type="button" on:click={addNewTask}>Add task</button>
+    <button class="button-deleteList" type="button" on:click={deleteTaskList}>Delete List</button>
     <ul class="ul-listTasks"></ul>
 </div>
 
