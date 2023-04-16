@@ -1,4 +1,4 @@
-<script>
+<script>    
     export let inputValue = '';
 </script>
 
@@ -7,5 +7,3 @@
     <label for="task">{inputValue}</label>
 </div>
 
-<style>
-</style>
