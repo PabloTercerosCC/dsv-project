@@ -19,7 +19,6 @@
     const inputNameTask1 = event.target.parentNode.querySelector('.button-add');
     inputNameTask1?.setAttribute('hidden', true);
   }
-
 </script>
 
 <li class="li-newtask">
@@ -29,4 +28,19 @@
 </li>
 
 <style>
+  .input-nameTask {
+    background-color: transparent;
+    margin-left: 40px;
+    margin-bottom: 10px
+  }
+
+  .button-add {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    border: none;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
 </style>
