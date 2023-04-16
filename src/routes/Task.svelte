@@ -18,13 +18,22 @@
     inputNameTask?.setAttribute('hidden', true);
     const inputNameTask1 = event.target.parentNode.querySelector('.button-add');
     inputNameTask1?.setAttribute('hidden', true);
+    const deleteTask = event.target.parentNode.querySelector('.button-delete');
+    deleteTask?.removeAttribute('hidden');
+  }
+
+  function deleteTask(event) {
+    const listTaskElement = document.querySelector('.li-newtask');
+    listTaskElement.remove();
   }
 </script>
 
 <li class="li-newtask">
   <input class="input-nameTask" type="text" name="item1-textfield" placeholder="Name Task....">
   <button class="button-add" type="button" on:click={(event) => createTask(event)}>Add</button>
-  <ul class="list-Task"></ul>
+  <ul class="list-Task">
+    <button class="button-delete" type="button" hidden on:click={(event) => deleteTask(event)}>Delete</button>
+  </ul>
 </li>
 
 <style>
@@ -34,7 +43,7 @@
     margin-bottom: 10px
   }
 
-  .button-add {
+  .button-add, .button-delete {
     background-color: rgb(58, 58, 58);
     color: white;
     border: none;
