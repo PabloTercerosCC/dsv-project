@@ -27,6 +27,12 @@
     editMode = 0; // Reset the editing index when editing is finished
     console.log(editMode);
   }
+
+  function deleteTaskList() {
+      const taskDiv = document.querySelector('.task');
+      taskDiv.remove();
+  }
+
 </script>
 
 <div class="task">
@@ -39,6 +45,7 @@
     {/if}
   </li>
   <button class="button-AddTask" type="button" on:click={addNewTask}>Add task</button>
+  <button class="button-deleteList" type="button" on:click={deleteTaskList}>Delete List</button>
   <ul class="ul-listTasks"></ul>
 </div>
 
@@ -63,7 +70,7 @@
   white-space: nowrap;
 }
 
-.button-AddTask {
+.button-AddTask, .button-deleteList {
   background-color: rgb(71, 106, 95);
   border: none;
   color: white;
