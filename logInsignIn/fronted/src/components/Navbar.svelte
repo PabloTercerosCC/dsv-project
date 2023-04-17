@@ -19,16 +19,15 @@
   <AppBar class="bg-dark-700 p-3 h-auto">
     <Router>
       <Link to="/todolist">
-        <img src="favicon.png" alt="logo" class="h-12 w-auto inline" />
-        <span class="text-xl text-white font-bold">MATTWEB</span>
+        
       </Link>
       <Button on:click={showMenu} fab class="ml-auto lg:hidden"
         ><Icon color="white">menu</Icon></Button
       >
-      <div
+      <!-- <div
         class="hidden w-full lg:inline-flex lg:flex-grow lg:w-auto lg:h-auto text-gray-400"
         id="menu"
-      >
+      > -->
         <div class="flex text-center flex-col lg:flex-row lg:ml-auto lg:items-center">
           {#if token}
           <Link
@@ -52,7 +51,7 @@
             >
           {/if}
         </div>
-      </div>
+      <!-- </div> -->
     </Router>
   </AppBar>
 </div>
